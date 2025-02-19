@@ -1,0 +1,404 @@
+@media screen and (max-width:1139px) {
+    .container{
+        padding-left:15px;
+        padding-right: 15px;
+    }
+
+    .order__container {
+        display: flex;
+        gap: 95px;
+        position: relative;
+    }
+    .container.advantages__container {
+        grid-template-areas: "adtitle adtitle adimg adimg"
+                          "adtext adtext adimg adimg"
+                           "ad1 ad1 ad2 ad2"
+                            "ad3 ad3 ad4 ad4";
+        padding: 0 50px;
+    }
+    .advantage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+
+
+@media screen and (max-width:768px) {
+    .header__container {
+        justify-content: space-between;
+    }
+
+    .header__container .phone {
+        display: none;
+    }
+
+    .offer {
+        padding-top: 72px;
+        padding-bottom: 62px;
+    }
+
+    .container.offer__container {
+        flex-direction: column;
+        position: relative;
+    }
+    .offer__image{
+        position: unset;
+    }
+    .offer__info {
+        padding-bottom: 358px;
+    }
+
+    .offer__text {
+        margin-bottom: 40px;
+    }
+
+    .offer__image-img {
+        position: absolute;
+        left: 164px;
+    }
+    .offer__image::before{
+        content: "";
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        top: 60%;
+        left: 46%;
+        border-radius: 50%;
+        border: 1px solid rgba(205, 124, 142, 0.92);
+        background-color: transparent;
+        z-index: 0;
+        animation: circle-animation 2s infinite linear;
+        overflow: hidden;
+    }
+    .offer__image::after{
+        content: "";
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        top: 60%;
+        left: 46%;
+        border-radius: 50%;
+        border: 1px solid rgba(205, 124, 142, 0.92);
+        background-color: transparent;
+        z-index: 0;
+        animation: circle-animation 2s infinite linear;
+        animation-delay: 0.5s;
+        overflow: hidden;
+    }
+
+
+    .advantages__title {
+        text-align: center;
+        max-width: 475px;
+        margin: 0 auto;
+    }
+
+    .advantages__text {
+        margin: 0 auto;
+        text-align: center;
+        max-width: 671px;
+    }
+
+    .advantages__image {
+        max-width: 302px;
+        margin: 0 auto;
+    }
+
+    .container.advantages__container {
+        grid-template-areas: "adtitle adtitle "
+                             "adtext adtext"
+                              "adimg adimg"
+                           "ad1 ad2"
+                            "ad3 ad4";
+        grid-template-columns: 220px 220px;
+        justify-content: center;
+    }
+
+    .advantage {
+        max-width: 220px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .order{
+        padding-top: 120px;
+    }
+    .container.order__container{
+        flex-direction: row-reverse;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+
+   .order__info{
+       padding-bottom: 60px;
+   }
+
+    .strawberry.strawberry_left {
+        left: unset;
+       right: 336px;
+       top: 248px;
+    }
+    .strawberry.strawberry_right{
+        right: 106px;
+        bottom: 461px;
+    }
+
+}
+
+
+@media screen and (max-width: 704px) {
+    .offer__image-img{
+        position: unset;
+        max-width: 350px;
+    }
+    .offer__image{
+        position: relative;
+    }
+    .offer__info{
+        padding-bottom: 38px;
+        text-align: center;
+    }
+    .offer__text{
+        margin: 0 auto;
+    }
+
+    .offer__btn{
+        margin-top: 40px;
+    }
+    .offer__image{
+        justify-content: center;
+    }
+    .order__image-img{
+        display: none;
+    }
+
+    .container.order__container{
+        justify-content: center;
+    }
+    .strawberry.strawberry_right{
+        display: none;
+    }
+    .strawberry.strawberry_left{
+        display: none;
+    }
+    .offer__image::before{
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 37%;
+        left: 40%;
+        border-radius: 50%;
+        border: 1px solid rgba(205, 124, 142, 0.92);
+        background-color: transparent;
+        z-index: 0;
+        animation: circle-animation 2s infinite linear;
+        overflow: hidden;
+    }
+    .offer__image::after{
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 37%;
+        left: 40%;
+        border-radius: 50%;
+        border: 1px solid rgba(205, 124, 142, 0.92);
+        background-color: transparent;
+        z-index: 0;
+        animation: circle-animation 2s infinite linear;
+        animation-delay: 0.5s;
+        overflow: hidden;
+    }
+}
+
+
+@media screen and (max-width: 549px){
+    .container.advantages__container{
+        grid-template-columns: repeat(2, minmax(165px, 1fr));
+        column-gap: 15px;
+    }
+    .header__container {
+        justify-content: space-between;
+    }
+    .menu{
+        display: none;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        top: 0;
+        left: 0;
+        background: rgba(74, 61, 61, 0.94);
+        z-index: 9999;
+    }
+    .menu__list{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0 auto;
+    }
+    .menu__item{
+        margin: 15px 0;
+    }
+    .menu__link{
+        color: #feefee;
+        font-size: 24px;
+        letter-spacing: 3px;
+    }
+
+
+    .header__burger{
+        display: block;
+        cursor: pointer;
+    }
+    .menu.open{
+        display: flex;
+        align-items: center;
+    }
+    .menu__close{
+        display: block;
+        width: 30px;
+        height: 30px;
+        fill: #ffffff;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        cursor: pointer;
+    }
+    .container.footer__container{
+        grid-template-areas:" logo "
+                            "phone"
+                        "footer__social"
+                        "footer__rights";
+        justify-content: center;
+        row-gap: 40px;
+    }
+    .footer{
+        padding: 50px 0;
+    }
+    .container.footer__container .logo{
+        height: 18px;
+        justify-self: center;
+    }
+    .footer__rights{
+        margin-top: 0;
+    }
+    .footer__social{
+        justify-self: center;
+    }
+    .container.footer__container .phone{
+        justify-self: center;
+    }
+    .footer__logo-img{
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 425px){
+    .present{
+        width: 70px;
+        height: 70px;
+    }
+    .present img{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .offer__title{
+        font-size: 32px;
+    }
+    .offer__text{
+        font-size: 16px;
+    }
+    .offer__image-img{
+        max-width: 250px;
+    }
+    .advantages{
+        padding: 100px 0;
+    }
+    .advantages__title{
+        font-size: 30px;
+    }
+    .advantages__text{
+        font-size: 16px;
+    }
+    .advantage__name{
+        font-size: 18px;
+        text-align: center;
+    }
+    .advantage__text{
+        text-align: center;
+        font-size: 13px;
+    }
+    .products{
+        padding: 100px 0;
+    }
+    .products__title{
+        font-size: 30px;
+        margin-bottom: 122px;
+    }
+    .order{
+        padding: 100px 0 77px 0;
+    }
+    .order__title{
+        font-size: 30px;
+    }
+    .order__description{
+        font-size: 16px;
+    }
+    .strawberry.strawberry_left{
+        top: 118px;
+        left: 282px;
+    }
+    .order__input{
+        width: 100%;
+    }
+    .order__btn{
+        width: 100%;
+    }
+    .present__text {
+        right: 115px;
+    }
+    .present__wrapper:hover .present__text {
+        transform: translateY(-100px)
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .container.advantages__container{
+        grid-template-columns: 1fr;
+        column-gap: 15px;
+        grid-template-areas: "adtitle "
+                             "adtext "
+                              "adimg"
+                           "ad1"
+                            "ad2"
+                            "ad3"
+                            "ad4";
+
+    }
+    .advantages__image {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    .strawberry.strawberry_left{
+        display: none;
+    }
+    .advantages__title{
+        font-size: 29px;
+    }
+    .advantages__text{
+        font-size: 15px;
+    }
+}
+
+
